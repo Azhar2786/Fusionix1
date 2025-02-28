@@ -19,7 +19,7 @@ import { useToggle } from "../hooks/useToggle";
 
 
 
-import Logo from "./logo";
+import Logo from "./Logo.jsx";
 
 const TopAppBar = ({ toggleSidebar }) => {
 
