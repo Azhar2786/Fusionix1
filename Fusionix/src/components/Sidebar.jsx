@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
  */
 import deleteConversation from "../utils/deleteConversation"
 
-import Logo from "./logo"
+import Logo from "./Logo"
 import { ExtendedFab, IconBtn } from "./Button"
 
 const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
