@@ -306,9 +306,9 @@
   * icon button
   */
   .icon-btn {
-    --state-layer-bg: theme('colors.light.onSurfaceVariant');
+    --state-layer-bg: theme('colors.light.surfaceVariant');
     @apply text-light-onSurfaceVariant
-    dark:text-dark-onSurfaceVariant
+    dark:text-dark-surfaceVariant
     grid
     place-items-center
     rounded-full
@@ -318,7 +318,11 @@
 
   @media (prefers-color-scheme: dark){
     .icon-btn {
-      --state-layer-bg: theme('colors.dark.onSurfaceVariant');
+      --state-layer-bg: theme('colors.dark.surfaceVariant');
+    }
+    .icon-btn:hover {
+      @apply
+      text-black;
     }
   }
 
@@ -526,6 +530,7 @@
  @media (prefers-color-scheme: dark) {
   .extended-fab {
     --state-layer-bg: theme('colors.dark.onPrimaryContainer');
+    @apply hover:text-black;
   }
  }
 
@@ -564,7 +569,7 @@
 
  @media (prefers-color-scheme: dark) {
   .nav-link {
-    --state-layer-bg: theme('colors.dark.onSurfaceVariant');
+    --state-layer-bg: theme('colors.dark.surfaceVariant');
   }
  
   .nav-link.active {
@@ -578,7 +583,7 @@
  */
 
  .prompt-field-container {
-  --state-layer-bg: theme('colors.light.onSurfaceVariant');
+  --state-layer-bg: theme('colors.light.surfaceVariant');
   @apply bg-light-surfaceContainer
   dark:bg-dark-surfaceContainer
   min-h-16
