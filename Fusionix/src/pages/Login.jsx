@@ -74,7 +74,7 @@ const Login = () => {
                     <p className="text-bodyLarge text-light-onSurfaceVariant
                     dark:text-dark-onSurfaceVariant mt-1 mb-5 text-center px-2">
                         Enter your Fusionix account details.<br />
-                        For Testing, Email: whitedevils265@gmail.com, password: White@1234
+                        For Testing<br/> <span className="text-white">Email: whitedevils265@gmail.com, password: White@1234</span> 
                     </p>
 
                     <Form
